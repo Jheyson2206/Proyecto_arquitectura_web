@@ -1,0 +1,557 @@
+/*Estilos Css*/
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #F2EDE4;
+}
+.contenedor{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    padding:0px;
+}
+/*Contenido header*/
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+	justify-content: space-between;
+	align-items: center;
+    font-family: "Playfair Display", serif;
+    font-size: medium;
+    background-color: #f2ede4a4;
+    backdrop-filter: blur(10px);
+    padding:5px 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+header img{
+    height: 100px;
+    width: auto;
+}
+.menu {
+    list-style: none;
+}
+.menu li {
+    display: inline-block;
+}
+.menu li a {
+    text-decoration: none;
+	color: #1B3C59;
+	margin: 5px;
+	padding: 8px;
+	font-size: 20px;
+}
+.menu li a:hover{
+    background-color: #7693A6;
+	padding: 8px;
+	color: white;
+}
+/*Estilo de Colores y letras*/
+p{
+    font-family: "Montserrat";
+    font-size: medium;
+}
+h1{
+    color: #1B3C59;
+    font-family: Sans-serif,serif;
+}
+h2{
+    color:#132F40;
+    font-family: "Lora", serif;
+}
+h3{
+    color: #4F6573;
+    font-family: "Merriweather", serif;
+}
+/*Footer*/
+footer{
+    background-color: #7693A6;
+    padding: 20px;
+    color: white;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.redes img{
+    height: 40px;
+    width: auto;
+}
+.redes {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.redes li a {
+    display: flex;
+    align-items: center;
+}
+.abajo {
+    display: flex;
+    gap: 40px;
+}
+.formulario {
+    flex: 60%;
+    min-width: 280px;
+    max-width: 500px;
+}
+.campos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 5px;
+}
+.campos input[type="text"],
+.campos input[type="email"],
+.campos input[type="tel"] {
+    flex: 1 1 200px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    padding: 10px;
+    outline: none;
+}
+.campos input[type="submit"] {
+    flex: 100%;
+    max-width: 200px;
+    background-color: white;
+    color: #7693A6;
+    font-weight: bold;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+}
+
+.campos input[type="submit"]:hover {
+    background-color: #e0e0e0;
+}
+
+.checkboxes label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: white;
+}
+
+.checkboxes a {
+    color: white;
+    text-decoration: underline;
+}
+.info-footer{
+    flex: 20%;
+    min-width: 160px;
+}
+.info-footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.info-footer li {
+    margin-bottom: 8px;
+}
+
+.info-footer a {
+    color: white;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+.info-footer a:hover {
+    text-decoration: underline;
+}
+.others {
+    flex: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.libros {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.libros img{
+    width: 50px;
+    height: auto;
+}
+.libros li{
+    display: inline-block;
+}
+/*Home*/
+.seccion1 {
+    position: relative;
+    height: 800px; /* o lo que necesites */
+    background-image: url('images/banner.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+/* Texto encima */
+.seccion1 h1 {
+    color: white;
+    font-size: 50px;
+    font-family: sans-serif, serif;
+    text-shadow: 2px 2px 4px black;
+}
+.seccion2 {
+    display: flex;
+    padding: 20px;
+    margin: 0 auto;   
+}
+.datosseccion2{
+    width: 50%;
+    padding: 100px;
+    text-align: left;
+}
+.fotoseccion2{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.fotoseccion2 img{
+    width: 300px;
+    height: auto;
+}
+.seccion3{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #e0e0e0;
+}
+.horario {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    margin: 20px;
+}
+.horario p{
+    font-size: 15px;
+}
+.horario1,
+.horario2,
+.horario3 {
+    padding: 20px;
+    margin: 20px;
+}
+.seccion4{
+    display: flex;
+    padding: 20px;
+    margin: 0 auto;
+}
+.datosseccion4{
+    width: 50%;
+    padding: 100px;
+    text-align: left;
+}
+.icono{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.icono img{
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+.fotoseccion4{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.fotoseccion4 img{
+    width: 300px;
+    height: auto;
+}
+
+
+/*Carta*/
+.carta{
+    padding: 40px 20px;
+}
+.platos,.vinos,.cocteles,.cervezas{
+    text-align: center;
+    margin-bottom: 60px;
+}
+.grupo{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    text-align: left;
+    margin-bottom: 30px;
+}
+.categoria{
+    width: 280px;
+}
+.precio{
+    color: gray;
+    font-size: x-small;
+}
+.anotacion{
+    color: #4F6573;
+    font-size: small;
+}
+.banner img{
+    width: 1280px;
+    height: 350px;    
+}
+.banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.banner h1{
+    font-size: 30px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.cbanner-texto{
+    margin:0px 100px 20px 100px;
+    padding: 20px;
+}
+/*Historia*/
+.historiatexto{
+    text-align: center;
+    padding: 25px;
+}
+.historiachef {
+    background-image: url(images/chef.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 900px;
+    width: 100%
+}
+.contenedorchef{
+    background: white;
+    padding: 20px;
+    border: 1px black;
+    max-width: 300px;
+    padding-top: 200px;
+}
+/*La Pasta Club*/
+.club {
+  display: flex;
+  border: 40px;
+  padding: 40px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.clubtexto {
+  flex: 1;
+  max-width: 300px;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 20px;
+}
+.beneficios {
+  flex: 2 1 600px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* centra los elementos horizontalmente */
+}
+.beneficio {
+  width: 400px;
+  margin: 0 15px 30px 15px; /* 15px a cada lado = 30px total entre elementos */
+  border: 1px solid #000;
+  padding: 10px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+.beneficio img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/*Reserva*/
+.contenedorfiesta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.columnaizquierda {
+    flex: 1;
+    min-width: 300px;
+    margin-left: 60px;
+}
+.imagenfiesta {
+    flex: 1;
+    max-width: 650px;
+    height: auto;
+    min-width: 300px;
+    margin-right: 60px;
+}
+.contenedoreventos {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; 
+    padding: 20px;
+    text-align: right;
+}
+.columnaderecha {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 60px;
+}
+.imageneventos {
+    flex: 1;
+    max-width: 650px;
+    height: auto;
+    min-width: 300px;
+    margin-left: 60px;
+}
+.boton {
+    width: 95%;
+    border: 2px solid black;
+    border-radius: 100px;
+    background-color: white;
+    padding: 8px;
+    margin-top: 20px;
+    text-decoration: none;
+    color: black;
+}
+.boton:hover {
+    background-color: #7693A6;
+    padding: 15px;
+    color: white;
+    border: 2px solid white;
+}
+
+/*Media para otros dispositivos*/
+@media (max-width: 768px) {
+    header img{
+        height: 150px;
+        width: auto;
+    }
+    /*Footer*/
+    .abajo {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .info-footer, .formulario, .others {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .top {
+        flex-direction: column;
+        gap: 10px;
+    }
+    /*Home*/
+    .seccion1,
+    .seccion2,
+    .seccion3,
+    .seccion4 {
+        flex-direction: column;
+        text-align: center;
+    }
+    .datosseccion2,
+    .datosseccion4,
+    .fotoseccion2,
+    .fotoseccion4 {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .fotoseccion2 img,
+    .fotoseccion4 img {
+        width: 90%;
+        max-width: 300px;
+        height: auto;
+    }
+    .horario{
+        flex-direction: column;
+        text-align: center;
+    }
+    /*Historia*/
+    .historiachef{
+        padding: 20px;
+        background-size: cover;
+        background-position: center;
+        height: auto;
+    }
+    .contenedorchef{
+        padding: 20px;
+    }
+    /*Carta*/
+    .cbanner-texto{
+        margin: 10px;
+    }
+    /*La Pasta Club*/
+    .club{
+        flex-direction: column;
+        text-align: center;
+    }
+    .clubtexto,
+    .beneficios{
+        width: 100%;
+        padding: 20px;
+    }
+    .beneficio{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .beneficio img{
+        width: 80%;
+        max-width: 300px;
+        height: auto;
+    }
+    /*Reserva*/
+    .fiesta{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .contenedorfiesta,
+    .contenedoreventos{
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .columnaizquierda,
+    .columnaderecha{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 10px;
+    }
+    .imageneventos,
+    .imagenfiesta{
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        display: block;
+        margin: 20px;
+    }
+}

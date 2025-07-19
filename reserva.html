@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"><!--codificacion-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>La Pasta</title>
+
+        <meta name="description" content="Somos la cocina que adaptó los sabores 
+        peruanos a las pastas italianas."> 
+
+        <!--OPEN GRAPH-->
+        <meta property="og:title" content="La Pasta - Tacna" >
+        <meta property="og:description" content="Somos la cocina que adaptó los sabores 
+        peruanos a las pastas italianas.">
+        <meta property="og:image" content="images/yo.jpg">
+        <meta property="og:image:alt" content="Local de La Pasta">
+        <meta name="robots" content="index, follow">
+        <meta name="theme-color" content="#09f">
+
+        <!--Fuentes que se van a usar-->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="estilos.css">
+        <style>
+           
+        </style>
+
+        <link rel="icon" type="image/jpg" href="images/favicon.jpg">
+    </head>
+    <body>
+        <div class="contenedor">
+            <header>
+                <a href="index.html">
+                    <img src="images/icon.png" alt="logo del negocio">
+                </a>
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="historia.html">Historia</a></li>
+                    <li><a href="carta.html">Carta</a></li>
+                    <li><a href="pastaclub.html">La Pasta Club</a></li>
+                    <li><a href="reserva.html">Reserva</a></li>
+                </ul>
+            </header>
+
+            <main>
+                <section class="fiesta">
+                    <div class="contenedorfiesta">
+                        <div class="columnaizquierda">
+                            <h2>LA PASTA ES UNA FIESTA</h2>
+                            <p> La PASTA es una celebración de la cocina peruana, la fusión y la vida.<br>
+                            Rinde homenaje a la tradición culinaria del Perú, combinando los sabores del mar con lo mejor de la pasta artesanal.</p>
+                            <p> Somos la cocina que adaptó los sabores peruanos, a las pastas italianas. </p>
+                            <a href="about:blank" target="_blank" class="boton">RESERVA YA</a>
+                        </div>
+                        <img class="imagenfiesta"src="images/fiesta.jpg">
+                    </div>
+
+                    <div class="contenedoreventos">
+                        <img class="imageneventos" src="images/eventos.jpg">
+                        <div class="columnaderecha">
+                            <h2>EVENTOS</h2>
+                            <p> Un espacio para celebrar la diversidad y cultura global con diferentes temáticas.<br>
+                            Además, ofrecemos eventos privados para empresas, cenas de negocios o celebraciones exclusivas.</p>
+                            <a href="about:blank" target="_blank" class="boton">CONECE LA AGENDA</a>
+                        </div>   
+                    </div>
+                </section>        
+            </main>
+            
+            <footer>
+                <div class="top">
+                    <h2>LA PASTA</h2>
+                    <ul class="redes">
+                        <li><a href="https://www.facebook.com/lapastacocina" target="_blank"><img src="images/facebook.png"></a></li>
+                        <li><a href="https://www.instagram.com/lapastacocina/" target="_blank"><img src="images/instagram.png"></a></li>
+                    </ul>
+                </div>
+                
+                <div class="abajo">    
+                    <div class="formulario">
+                        <p>Suscribete para recibir novedades y promociones</p>
+                                <form method="post" id="miformulario">
+                                            <div class="campos">
+                                                <input type="text" id="nombre" placeholder="Nombre" required>
+                                                <input type="text" placeholder="Apellido">
+                                                <input type="tel" placeholder="Celular" required pattern="[0-9]{9}">
+                                                <input type="email" placeholder="Correo" required>
+                                                <input type="submit" value="Suscríbete">
+                                            </div>
+
+                                            <div class="checkboxes">
+                                                <label><input type="checkbox" required> He leído y acepto las <a href="#">políticas de privacidad</a>.</label>
+                                                <label><input type="checkbox"> Acepto tratamiento de datos para fines publicitarios (Opcional)</label>
+                                                <label><input type="checkbox"> Declaro que soy mayor de 14 años.</label>
+                                            </div>
+                                </form>
+                    </div> 
+                        
+                    <div class="info-footer">
+                        <h3>Sobre La Pasta</h3>
+                        <ul>
+                            <li><a href="historia.html">Historia</a></li>
+                            <li><a href="carta.html">Carta</a></li>
+                            <li><a href="pastaclub.html">La Pasta Club</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="info-footer">
+                        <h3>Ayuda y Legales</h3>
+                        <ul>
+                            <li><a href="cokies.html" target="_blank">Política de cookies</a></li>
+                            <li><a href="privacidad.html" target="_blank">Política de privacidad</a></li>
+                            <li><a href="termycond.html" target="_blank">Términos y Condiciones de uso</a></li>
+                        </ul>
+                    </div>
+                    <div class="others">
+                    <ul class="libros">
+                        <li><a href="https://reclamaciones.acuriorestaurantes.net/libro_reclamaciones/(S(lxm2q44zjhc4b4gxqorunu4u))/libro_reclamaciones.aspx" target="_blank"><img src="images/libro-de-reclamaciones.svg"></a></li>
+                    </ul>
+                    </div>  
+                </div>   
+            </footer>
+        </div>
+        <!--Enlazamos el script-->
+        <script src="script.js"></script>
+    </body>
+</html>
